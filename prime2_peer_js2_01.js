@@ -50,15 +50,34 @@ while (i>0){
 }
 
 var cutstring = function(val){
-	val.toString();
+
+	val =val.toString();
+
+	if(val.length>1){
+
+
 	var stringcut = val.substring(1,val.length);
-console.log(stringcut);
+
+	val = stringcut;
+
+    }
+  // console.log("stringcut = " + stringcut);
+
+
+
+  return val;
 
 }
-cutstring(123);
+
+
+value =cutstring(value);
+
+
 
 //console.log("stringcut ="+stringcut);
-console.log(newstr);
-console.log(myArray);
+//console.log(newstr);
+//console.log(myArray);
 console.log(value);
+
+
 
